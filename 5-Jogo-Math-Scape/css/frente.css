@@ -6,6 +6,7 @@
 .porta {
     top: 352px;
     left: 1145px;
+    cursor: pointer;
 }
 
 .quadro-negro {
@@ -14,8 +15,9 @@
 }
 
 .giz-quadro {
-    top: 671px;
-    left: 900px;
+    top: 662px;
+    left: 915px;
+    cursor: pointer;
 }
 
 .interrogacao {
@@ -27,11 +29,13 @@
 .relogio-1 {
     top: 160px;
     left: 660px;
+    cursor: pointer;
 }
 
 .relogio-2 {
     top: 160px;
     left: 960px;
+    cursor: pointer;
 }
 
 .room p {

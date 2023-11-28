@@ -50,6 +50,7 @@ section {
     justify-content: center;
     left: 424px;
     top: 157px;
+    cursor: pointer;
 }
 
 .number {
@@ -110,11 +111,213 @@ section {
     transform: rotate(360deg);
 }
 
+.ponteiro {
+    font-size: 1.2rem;
+    font-weight: 600;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    color: white;
+}
+
+.pointer-1 {
+    transform: rotate(6deg)
+}
+
+.pointer-2 {
+    transform: rotate(12deg)
+}
+
+.pointer-3 {
+    transform: rotate(18deg)
+}
+
+.pointer-4 {
+    transform: rotate(24deg)
+}
+
+.pointer-5 {
+    transform: rotate(36deg)
+}
+
+.pointer-6 {
+    transform: rotate(42deg)
+}
+
+.pointer-7 {
+    transform: rotate(48deg)
+}
+
+.pointer-8 {
+    transform: rotate(54deg)
+}
+
+.pointer-9 {
+    transform: rotate(66deg)
+}
+
+.pointer-10 {
+    transform: rotate(72deg)
+}
+
+.pointer-11 {
+    transform: rotate(78deg)
+}
+
+.pointer-12 {
+    transform: rotate(84deg)
+}
+
+.pointer-13 {
+    transform: rotate(96deg)
+}
+
+.pointer-14 {
+    transform: rotate(102deg)
+}
+
+.pointer-15 {
+    transform: rotate(108deg)
+}
+
+.pointer-16 {
+    transform: rotate(114deg)
+}
+
+.pointer-17 {
+    transform: rotate(126deg)
+}
+
+.pointer-18 {
+    transform: rotate(132deg)
+}
+
+.pointer-19 {
+    transform: rotate(138deg)
+}
+
+.pointer-20 {
+    transform: rotate(144deg)
+}
+
+.pointer-21 {
+    transform: rotate(156deg)
+}
+
+.pointer-22 {
+    transform: rotate(162deg)
+}
+
+.pointer-23 {
+    transform: rotate(168deg)
+}
+
+.pointer-24 {
+    transform: rotate(174deg)
+}
+
+.pointer-25 {
+    transform: rotate(186deg)
+}
+
+.pointer-26 {
+    transform: rotate(192deg)
+}
+
+.pointer-27 {
+    transform: rotate(198deg)
+}
+
+.pointer-28 {
+    transform: rotate(204deg)
+}
+
+.pointer-29 {
+    transform: rotate(216deg)
+}
+
+.pointer-30 {
+    transform: rotate(222deg)
+}
+
+.pointer-31 {
+    transform: rotate(228deg)
+}
+
+.pointer-32 {
+    transform: rotate(234deg)
+}
+
+.pointer-33 {
+    transform: rotate(246deg)
+}
+
+.pointer-34 {
+    transform: rotate(252deg)
+}
+
+.pointer-35 {
+    transform: rotate(258deg)
+}
+
+.pointer-36 {
+    transform: rotate(264deg)
+}
+
+.pointer-37 {
+    transform: rotate(276deg)
+}
+
+.pointer-38 {
+    transform: rotate(282deg)
+}
+
+.pointer-39 {
+    transform: rotate(288deg)
+}
+
+.pointer-40 {
+    transform: rotate(294deg)
+}
+
+.pointer-41 {
+    transform: rotate(306deg)
+}
+
+.pointer-42 {
+    transform: rotate(312deg)
+}
+
+.pointer-43 {
+    transform: rotate(318deg)
+}
+
+.pointer-44 {
+    transform: rotate(324deg)
+}
+
+.pointer-45 {
+    transform: rotate(336deg)
+}
+
+.pointer-46 {
+    transform: rotate(342deg)
+}
+
+.pointer-47 {
+    transform: rotate(348deg)
+}
+
+.pointer-48 {
+    transform: rotate(354deg)
+}
+
 .second-hand {
     width: 5px;
     height: 240px;
-    background: rgb(151,2,189);
-    background: linear-gradient(90deg, rgba(151,2,189,1) 0%, rgba(98,0,148,1) 0%, rgba(179,2,189,1) 43%, rgba(75,0,148,1) 100%);
+    background: rgb(151, 2, 189);
+    background: linear-gradient(90deg, rgba(151, 2, 189, 1) 0%, rgba(98, 0, 148, 1) 0%, rgba(179, 2, 189, 1) 43%, rgba(75, 0, 148, 1) 100%);
     position: absolute;
     border-radius: 5px;
     transform: translate(0, -50%);
@@ -124,8 +327,8 @@ section {
 .minute-hand {
     width: 8px;
     height: 200px;
-    background: rgb(2,189,185);
-    background: linear-gradient(90deg, rgba(2,189,185,1) 0%, rgba(0,99,148,1) 0%, rgba(2,164,189,1) 43%, rgba(0,111,148,1) 100%);
+    background: rgb(2, 189, 185);
+    background: linear-gradient(90deg, rgba(2, 189, 185, 1) 0%, rgba(0, 99, 148, 1) 0%, rgba(2, 164, 189, 1) 43%, rgba(0, 111, 148, 1) 100%);
     position: absolute;
     border-radius: 5px;
     transform: translate(0, -50%);
@@ -135,8 +338,8 @@ section {
 .hour-hand {
     width: 13px;
     height: 150px;
-    background: rgb(2,189,185);
-    background: linear-gradient(90deg, rgba(2,189,185,1) 0%, rgba(0,99,148,1) 0%, rgba(2,164,189,1) 43%, rgba(0,111,148,1) 100%);
+    background: rgb(2, 189, 185);
+    background: linear-gradient(90deg, rgba(2, 189, 185, 1) 0%, rgba(0, 99, 148, 1) 0%, rgba(2, 164, 189, 1) 43%, rgba(0, 111, 148, 1) 100%);
     position: absolute;
     border-radius: 13px;
     transform: translate(0, -50%);
@@ -147,8 +350,8 @@ section {
     width: 20px;
     height: 20px;
     border-radius: 20px;
-    background: rgb(151,2,189);
-    background: linear-gradient(90deg, rgba(151,2,189,1) 0%, rgba(98,0,148,1) 0%, rgba(179,2,189,1) 43%, rgba(75,0,148,1) 100%);
+    background: rgb(151, 2, 189);
+    background: linear-gradient(90deg, rgba(151, 2, 189, 1) 0%, rgba(98, 0, 148, 1) 0%, rgba(179, 2, 189, 1) 43%, rgba(75, 0, 148, 1) 100%);
     position: absolute;
 }
 
@@ -195,7 +398,7 @@ section {
     left: 1245px;
     font-family: 'Pacifico', cursive, sans-serif;
     font-size: 27px;
-    color: white; 
+    color: white;
 }
 
 .god-eye {

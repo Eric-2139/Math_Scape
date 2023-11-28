@@ -10,6 +10,8 @@ body {
     width: 100%;
     height: 100%;
     overflow: hidden;
+    background: rgb(0, 200, 255);
+    background: radial-gradient(circle, rgba(0, 200, 255, 1) 0%, rgba(84, 84, 84, 1) 0%, rgba(45, 45, 45, 1) 43%, rgba(0, 0, 0, 1) 100%);
 }
 
 .room {
@@ -17,10 +19,16 @@ body {
     padding: 0;
     width: 1440px;
     height: 900px;
-    
+
 }
 
-.room > * {
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.room>* {
     margin: 0;
     padding: 0;
     position: absolute;
@@ -49,15 +57,17 @@ main .room.selecionado {
     align-items: center;
     gap: 10px;
     color: white;
+    list-style: none;
 }
 
 .botoes .botao {
     cursor: pointer;
-    border: 1px solid ;
+    border: 1px solid;
     padding: 8px 24px;
     border-radius: 4px;
     color: whitesmoke;
-    background-color: rgb(24, 24, 24);;
+    background: rgb(0, 200, 255);
+    background: linear-gradient(90deg, rgba(0, 200, 255, 1) 0%, rgba(199, 0, 255, 1) 0%, rgba(0, 174, 255, 1) 43%, rgba(199, 0, 255, 1) 100%);
     transition: background-color 0.8s;
 }
 
@@ -65,6 +75,3 @@ main .room.selecionado {
     border: 1px solid rgba(255, 0, 0, 0.219);
     background-color: rgba(255, 0, 0, 0.219);
 }
-
-
-

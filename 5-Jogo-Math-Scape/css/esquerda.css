@@ -1,6 +1,7 @@
 .relogio-antigo {
     top: 160px;
     left: 793px;
+    cursor: pointer;
 }
 
 .room .pergunta-horas {
@@ -12,6 +13,7 @@
     width: 400px;
     text-align: center;
     line-height: 55px;
+    cursor: pointer;
 }
 
 .resposta-esquerda-horas {
@@ -56,6 +58,7 @@
     width: 400px;
     text-align: center;
     line-height: 55px;
+    cursor: pointer;
 }
 
 .resposta-esquerda-min {

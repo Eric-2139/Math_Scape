@@ -6,11 +6,13 @@
 .janela-1 {
     top: 375px;
     left: 410px;
+    cursor: pointer;
 }
 
 .janela-2 {
     top: 375px;
     left: 1215px;
+    cursor: pointer;
 }
 
 .room .regra {
