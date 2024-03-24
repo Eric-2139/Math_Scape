@@ -1,0 +1,19 @@
+@media (max-width: 769px) {
+    .room {
+        transform: rotate(90deg);
+    }
+
+    .botoes {
+        transform: rotate(90deg);
+    }
+}
+
+@media (max-width: 425px) {
+    .room {
+        transform: rotate(90deg);
+    }
+
+    .botoes {
+        transform: rotate(90deg);
+    }
+}
