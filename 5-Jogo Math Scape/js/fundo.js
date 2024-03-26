@@ -15,7 +15,7 @@ function verificar_fundo() {
         resfundo.innerHTML = 'O selo foi quebrado. O quarto digito da senha é 9'
         selo_magico.src = ''
         selo_magico.style.background = 'none'
-        arvore_seca.src = './imagens/fundo/arvore.png'
+        arvore_seca.src = '/Fu_ArvSc'
         arvore_seca.style.top = '206px'
         arvore_seca.style.left = '607px'
         arvore_seca.style.width = '585px'

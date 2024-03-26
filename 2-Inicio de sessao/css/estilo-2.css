@@ -5,7 +5,7 @@
 }
 
 body{
-    background-image: url('../css/Imagens/background.png');
+    background-image: url('/imag_log');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
