@@ -22,7 +22,7 @@
         background-size: 100%;
         background-repeat: no-repeat; 
         background-position: center top 90px;
-        background-image: url('../Imagens/background_tela_inicial.png');
+        background-image: url('/Inf_FU');
         overflow-x: hidden;
     }
     header{
