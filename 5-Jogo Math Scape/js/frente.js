@@ -7,7 +7,7 @@ button.addEventListener('click', () => {
     const password = input.value;
 
     if (password === '92139') {
-        window.location.href = 'http://127.0.0.1:5500/3-Opçoes/index3.html'
+        window.location.href = '/3opcao'
         alert('Tet: Meus parabéns, agora lhe compartilho o meu poder de criação de mundos, se divirta criando e explorando o universo, afinal, não só nós que possímos esse poder!!');
     } else {
         alert('Senha incorreta!');

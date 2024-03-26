@@ -5,14 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="./css/estilo.css">
-    <link rel="stylesheet" href="./css/frente.css">
-    <link rel="stylesheet" href="./css/direita.css">
-    <link rel="stylesheet" href="./css/fundo.css">
-    <link rel="stylesheet" href="./css/esquerda.css">
-    <link rel="stylesheet" href="./css/teto.css">
-    <link rel="stylesheet" href="./css/responsivo.css">
-    <link rel="shortcut icon" href="./imagens/favicons/favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="/fase_css">
+    <link rel="stylesheet" href="/fase_css_F">
+    <link rel="stylesheet" href="/fase_css_D">
+    <link rel="stylesheet" href="/fase_css_FU">
+    <link rel="stylesheet" href="/fase_css_E">
+    <link rel="stylesheet" href="/fase_css_T">
+    <link rel="shortcut icon" href="/ico_fase" type="image/x-icon">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -25,15 +24,15 @@
     <main>
         <!--Frente-->
         <div class="room selecionado">
-            <img src="./imagens/frente/room.png" alt="room" class="frente">
-            <img src="./imagens/frente/configuracoes.png" alt="configuracoes" class="config">
-            <img src="./imagens/frente/door.png" alt="door" class="porta" onclick="porta()">
-            <img src="./imagens/frente/quadro_negro.png" alt="quadro negro" class="quadro-negro">
-            <img src="./imagens/frente/giz de quadro.png" alt="giz" class="giz-quadro" onclick="giz()">
-            <img src="./imagens/frente/interrogação.png" alt="interrogação" class="interrogacao"
+            <img src="/F_Roo" alt="room" class="frente">
+            <img src="/F_Conf" alt="configuracoes" class="config">
+            <img src="/F_Door" alt="door" class="porta" onclick="porta()">
+            <img src="/F_Quad" alt="quadro negro" class="quadro-negro">
+            <img src="/F_Giz" alt="giz" class="giz-quadro" onclick="giz()">
+            <img src="/F_Int" alt="interrogação" class="interrogacao"
                 onclick="dica_frente()">
-            <img src="./imagens/frente/relogio.png" alt="relogio" class="relogio-1" onclick="relogio_1()">
-            <img src="./imagens/frente/relogio.png" alt="relogio" class="relogio-2" onclick="relogio_2()">
+            <img src="/F_Rel" alt="relogio" class="relogio-1" onclick="relogio_1()">
+            <img src="/F_Rel" alt="relogio" class="relogio-2" onclick="relogio_2()">
 
             <p>Bem-vindo a sua primeira (ou última) aula, ao lado, está a sua “salvação”, resolva o exercício abaixo
                 para conseguir o terceiro dígito da porta, bom, se você não conseguir resolver essa simples questão, não
@@ -45,7 +44,7 @@
 
             <input type="password" class="input" placeholder="Digite a senha">
             <button class="button">
-                <img src="./imagens/frente/botao_futuro.png" alt="botao" class="botao-futuro">
+                <img src="/F_Bot_Fu" alt="botao" class="botao-futuro">
             </button>
 
             <input type="number" name="resposta" class="resposta">
@@ -55,12 +54,12 @@
 
         <!--Direita-->
         <div class="room">
-            <img src="./imagens/direita/room_2.png" alt="room-2">
-            <img src="./imagens/direita/quadro.png" alt="quadro" class="quadro">
-            <img src="./imagens/direita/janela.png" alt="janela" class="janela-1" onclick="janela_1()">
-            <img src="./imagens/direita/janela.png" alt="janela" class="janela-2" onclick="janela_2()">
-            <img src="./imagens/direita/configuracoes.png" alt="config" class="config">
-            <img src="./imagens/direita/interrogação.png" alt="interrogação" class="interrogacao-direita"
+            <img src="/D_Roo" alt="room-2">
+            <img src="/D_Quad" alt="quadro" class="quadro">
+            <img src="D_Jan" alt="janela" class="janela-1" onclick="janela_1()">
+            <img src="D_Jan" alt="janela" class="janela-2" onclick="janela_2()">
+            <img src="D_Conf" alt="config" class="config">
+            <img src="/D_Int" alt="interrogação" class="interrogacao-direita"
                 onclick="dica_direita()">
 
             <p class="regra"><strong>Respeite as regras de cálculo de equações!!</strong></p>
@@ -73,13 +72,13 @@
 
         <!--Fundo-->
         <div class="room">
-            <img src="./imagens/fundo/room.png" alt="room">
-            <img src="./imagens/fundo/janela.png" alt="janela" class="janela-1" onclick="janela_3()">
-            <img src="./imagens/fundo/janela.png" alt="janela" class="janela-2" onclick="janela_4()">
-            <img src="./imagens/fundo/arvore-seca.png" alt="arvore-seca" class="arvore-seca">
-            <img src="./imagens/fundo/pentagrama.png" alt="pentagrama" class="pentagrama" onclick="pentagrama()">
-            <img src="./imagens/fundo/configuracoes.png" alt="config" class="config">
-            <img src="./imagens/fundo/interrogação.png" alt="interrogação" class="interrogacao-fundo"
+            <img src="/Fu_Roo" alt="room">
+            <img src="/Fu_Jan" alt="janela" class="janela-1" onclick="janela_3()">
+            <img src="/Fu_Jan" alt="janela" class="janela-2" onclick="janela_4()">
+            <img src="/Fu_ArS" alt="arvore-seca" class="arvore-seca">
+            <img src="/Fu_Pen" alt="pentagrama" class="pentagrama" onclick="pentagrama()">
+            <img src="/Fu_Conf" alt="config" class="config">
+            <img src="/Fu_Int" alt="interrogação" class="interrogacao-fundo"
                 onclick="dica_fundo()">
 
             <p class="num-pent-4">4</p>
@@ -94,12 +93,12 @@
 
         <!--Esquerda-->
         <div class="room">
-            <img src="./imagens/esquerda/room_2.png" alt="room_2">
-            <img src="./imagens/esquerda/relogio.png" alt="relogio" class="relogio-antigo" onclick="relogio_antigo()">
-            <img src="./imagens/esquerda/configuracoes.png" alt="config" class="config">
-            <img src="./imagens/esquerda/interrogação.png" alt="interrogacao" class="interrogacao-esquerda"
+            <img src="/E_Roo" alt="room_2">
+            <img src="/E_Rel_Ant" alt="relogio" class="relogio-antigo" onclick="relogio_antigo()">
+            <img src="E_Conf" alt="config" class="config">
+            <img src="E_Int" alt="interrogacao" class="interrogacao-esquerda"
                 onclick="dica_esquerda()">
-            <img src="./imagens/esquerda/giz-vermelho.png" alt="giz-vermelho" class="giz-vermelho" onclick="giz_vermelho()">
+            <img src="E_GizV" alt="giz-vermelho" class="giz-vermelho" onclick="giz_vermelho()">
 
             <p class="pergunta-horas" onclick="pergunta_horas()">
                 <strong>
@@ -133,16 +132,16 @@
 
         <!--Teto-->
         <div class="room">
-            <img src="./imagens/teto/teto.png" alt="teto">
-            <img src="./imagens/teto/lampada.png" alt="lampada" class="lampada-1">
-            <img src="./imagens/teto/lampada.png" alt="lampada" class="lampada-2">
-            <img src="./imagens/teto/lampada.png" alt="lampada" class="lampada-3">
-            <img src="./imagens/teto/lampada.png" alt="lampada" class="lampada-4">
-            <img src="./imagens/teto/configuracoes.png" alt="config" class="config-teto">
+            <img src="/T_tet" alt="teto">
+            <img src="/T_Lam" alt="lampada" class="lampada-1">
+            <img src="/T_Lam" alt="lampada" class="lampada-2">
+            <img src="/T_Lam" alt="lampada" class="lampada-3">
+            <img src="/T_Lam" alt="lampada" class="lampada-4">
+            <img src="/T_Conf" alt="config" class="config-teto">
 
             <section>
                 <div class="clock" onclick="olho_de_deus()">
-                    <img src="./imagens/teto/god-eye.jpg" alt="god eye" class="god-eye">
+                    <img src="T_God" alt="god eye" class="god-eye">
                     <div class="hour-hand"></div>
                     <div class="minute-hand"></div>
                     <div class="second-hand"></div>
@@ -211,7 +210,7 @@
                     <div class="ponteiro pointer-47">|</div>
                     <div class="ponteiro pointer-48">|</div>
 
-                    <img src="./imagens/teto/interrogação.png" alt="interrogação" class="interrogacao-teto"
+                    <img src="T_Int" alt="interrogação" class="interrogacao-teto"
                         onclick="dica_teto()">
                 </div>
             </section>
@@ -251,12 +250,12 @@
         </li>
     </ul>
 
-    <script src="./js/script.js"></script>
-    <script src="./js/frente.js"></script>
-    <script src="./js/direita.js"></script>
-    <script src="./js/fundo.js"></script>
-    <script src="./js/esquerda.js"></script>
-    <script src="./js/teto.js"></script>
+    <script src="/Fase_scrip"></script>
+    <script src="/Fase_scrip_F"></script>
+    <script src="/Fase_scrip_D"></script>
+    <script src="/Fase_scrip_FU"></script>
+    <script src="/Fase_scrip_E"></script>
+    <script src="/Fase_scrip_T"></script>
 </body>
 
 </html>
