@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
+
+* {
+    font-family: 'Secular One', sans-serif; 
+}
+
+p {
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+}
+
+body {
+    background-image: url('../Imagens/background.png');
+}
+
+.exibicao {
+    display: flex;
+}
+
+.fase-escola {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 20px 0px 0px 20px;
+}
+
+.escola {
+    width: 300px;
+    height: 187.5px;
+}
