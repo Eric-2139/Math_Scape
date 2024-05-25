@@ -2,9 +2,12 @@ const express = require('express');
 const app = express();
 const path = require('path');
 
+const db = require("./src/database")
+
+
 //Rota informações 
 
-app.get("/Infor", function(req, res){
+app.get("/Home", function(req, res){
     res.sendFile(__dirname + '/Math_Scape_Telas/0-Tela Inicial/index.html');
 })
 
@@ -25,7 +28,6 @@ app.get('/Inf_Ast', function(req, res) {
     res.sendFile(filePath);
 });
 
-
 app.get('/Inf_FU', function(req, res) {
     const filePath = path.join(__dirname, 'Math_Scape_telas', '0-Tela Inicial','Imagens', 'background_tela_inicial.png');
     res.sendFile(filePath);
@@ -40,6 +42,7 @@ app.get('/Inf_Log', function(req, res) {
     const filePath = path.join(__dirname, 'Math_Scape_telas', '0-Tela Inicial','Imagens', 'logo.png');
     res.sendFile(filePath);
 });
+
 //Rota script Informações
 
 app.get('/Inf_Scri', function(req, res) {
@@ -81,36 +84,36 @@ app.get('/Cad_ico', function(req, res) {
     res.sendFile(filePath);
 });
 
-//Rota Login 
+//Rota Login/Cadastro
 
-app.get("/Login", function(req, res){
-    res.sendFile(__dirname + '/Math_Scape_telas/2-inicio de sessao/index2.html')
+app.get("/Login_Cadastro", function(req, res){
+    res.sendFile(__dirname + '/Math_Scape_telas/1.2-Login_Cadastro/index.html')
 });
 
 //Rota css/estilo login
 
-app.get("/css_res_log", function(req, res){
-    res.sendFile(__dirname + '/Math_Scape_telas/2-Inicio de sessao/css/reset-2.css')
+app.get("/css_est_log_cad", function(req, res){
+    res.sendFile(__dirname + '/Math_Scape_telas/1.2-Login_Cadastro/css/estilo.css')
 })
 
-app.get("/css_est_log", function(req, res){
-    res.sendFile(__dirname + '/Math_Scape_telas/2-Inicio de sessao/css/estilo-2.css')
+//Rota img login_Cadastro
+
+app.get("/imag_log_cad", function(req, res){
+    res.sendFile(__dirname + '/Math_Scape_telas/1.2-Login_Cadastro/Images/background.png')
 })
 
-//Rota img login 
-
-app.get("/imag_log", function(req, res){
-    res.sendFile(__dirname + '/Math_Scape_telas/2-Inicio de sessao/Imagens/background.png')
+app.get("/imag_log_cad_for", function(req, res){
+    res.sendFile(__dirname + '/Math_Scape_telas/1.2-Login_Cadastro/Images/background-form.png')
 })
 
-app.get("/ico_log", function(req, res){
-    res.sendFile(__dirname + '/Math_Scape_telas/2-Inicio de sessao/favicons/favicon-32x32.png')
+app.get("/ico_log_cad", function(req, res){
+    res.sendFile(__dirname + '/Math_Scape_telas/1.2-Login_Cadastro/favicons/favicon-32x32.png')
 })
 
 //Rota script login 
 
-app.get('/scriLog', function(req, res) {
-    const filePath = path.join(__dirname, 'Math_Scape_telas', '2-inicio de sessao','JS', 'script.js');
+app.get('/scriLog_cad', function(req, res) {
+    const filePath = path.join(__dirname, 'Math_Scape_telas', '1.2-Login_Cadastro','JS', 'script.js');
     res.sendFile(filePath);
 });
 
@@ -119,25 +122,21 @@ app.get('/scriLog', function(req, res) {
 
 
 app.get("/3opcao", function(req, res){
-    res.sendFile(__dirname + '/Math_Scape_telas/3-Opçoes/index3.html')
-});
-
-app.get("/css_res_ops", function(req, res){
-    res.sendFile(__dirname + '/Math_Scape_telas/3-Opçoes/css/reset-3.css')
+    res.sendFile(__dirname + '/Math_Scape_telas/3-Opçoes/index.html')
 });
 
 app.get("/css_est_ops", function(req, res){
-    res.sendFile(__dirname + '/Math_Scape_telas/3-Opçoes/css/estilo-3.css')
+    res.sendFile(__dirname + '/Math_Scape_telas/3-Opçoes/css/estilo.css')
 });
 
 //Rota imgs ops
 
 app.get("/imag_ops", function(req, res){
-    res.sendFile(__dirname + '/Math_Scape_telas/3-Opçoes/Imagens/background.png')
+    res.sendFile(__dirname + '/Math_Scape_telas/3-Opçoes/Images/background.png')
 })
 
 app.get('/ico_ops', function(req, res) {
-    const filePath = path.join(__dirname, 'Math_Scape_telas', '3-Opçoes','Imagens','favicons', 'favicon-32x32.png');
+    const filePath = path.join(__dirname, 'Math_Scape_telas', '3-Opçoes','Images','favicons', 'favicon-32x32.png');
     res.sendFile(filePath);
 });
 
@@ -149,7 +148,7 @@ app.get('/scrip_ops', function(req, res) {
 });
 
 // Rota criar 
-app.get("/criar", function(req, res){
+app.get("/cria_fase", function(req, res){
     res.sendFile(__dirname + '/Math_Scape_telas/4-Criador de fases/index4.html')
 })
 
