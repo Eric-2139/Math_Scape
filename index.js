@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 const path = require('path');
 
-const db = require("./src/database")
+//const db = require("./src/database")
 
 
 //Rota informações 
@@ -50,17 +50,16 @@ app.get('/Inf_Scri', function(req, res) {
     res.sendFile(filePath);
 });
 
-//Rota Cadastro
 
-app.get("/cadastro", function(req, res){
+/*app.get("/cadastro", function(req, res){
     res.sendFile(__dirname + '/Math_Scape_telas/1-Cadastro/index.html');
-});
+});*/
 
 //Rota css/estilo cadastro 
 
-app.get("/css_resert_cadastro", function(req, res){
+/*app.get("/css_resert_cadastro", function(req, res){
     res.sendFile(__dirname + '/Math_Scape_telas/1-Cadastro/css/reset.css');
-});
+});*/
 
 app.get("/css_estilo_cadastro", function(req, res){
     res.sendFile(__dirname + '/Math_Scape_telas/1-Cadastro/css/estilo.css');
@@ -68,7 +67,7 @@ app.get("/css_estilo_cadastro", function(req, res){
 
 //Rota script cadastro 
 
-app.get('/scripCads', function(req, res) {
+/*app.get('/scripCads', function(req, res) {
     const filePath = path.join(__dirname, 'Math_Scape_telas', '1-Cadastro','JS', 'script.js');
     res.sendFile(filePath);
 });
@@ -82,7 +81,7 @@ app.get("/imag_cads", function(req, res){
 app.get('/Cad_ico', function(req, res) {
     const filePath = path.join(__dirname, 'Math_Scape_telas', '1-Cadastro','Imagens','favicons', 'favicon-32x32.png');
     res.sendFile(filePath);
-});
+});*/
 
 //Rota Login/Cadastro
 
@@ -165,6 +164,35 @@ app.get("/main_criar", function(req, res){
 app.get("/reset_criar", function(req, res){
     res.sendFile(__dirname + '/Math_Scape_telas/4-Criador de fases/css/reset.css')
 })
+//Rota escolher fase
+
+app.get('/escolher', function(req, res){
+    const filePath = path.join(__dirname, 'Math_Scape_telas','4.1-Escolher Fase', 'index.html')
+});
+
+//Rota escolhar de fase css
+
+app.get('/escolhas_css', function(req, res){
+    const filePath = path.join(__dirname, 'Math_Scape_telas','4.1-Escolher Fase', 'css', 'estilo.css')
+});
+
+app.get('/escolhas_reset_css', function(req, res){
+    const filePath = path.join(__dirname, 'Math_Scape_telas','4.1-Escolher Fase', 'css', 'reset.css')
+});
+
+//Rota img escolhar
+
+app.get('/imgs_escolha', function(req, res){
+    const filePath = path.join(__dirname, 'Math_Scape_telas','4.1-Escolher Fase', 'Imagens', 'background.png')
+});
+
+app.get('/imgs_escolhas', function(req, res){
+    const filePath = path.join(__dirname, 'Math_Scape_telas','4.1-Escolher Fase', 'Imagens', 'room.png')
+});
+
+app.get('/icon_escolhas', function(req, res){
+    const filePath = path.join(__dirname, 'Math_Scape_telas','4.1-Escolher Fase', 'Imagens', 'favicons','favicon-32x32.png')
+});
 
 //Rota imagem criador de fases
 
@@ -213,233 +241,233 @@ app.get('/scrip_criar', function(req, res) {
 //Fase pronto
 
 app.get('/fase', function(req, res){
-    res.sendFile(__dirname + '/Math_Scape_telas/5-Jogo Math Scape/index.html')
+    res.sendFile(__dirname + '/Math_Scape_telas/5-Jogo_Math_Scape/index.html')
 })
 
 //Rota css da fase pronta
 
 app.get("/fase_css", function(req, res){
-    res.sendFile(__dirname + '/Math_Scape_telas/5-Jogo Math Scape/css/estilo.css')
+    res.sendFile(__dirname + '/Math_Scape_telas/5-Jogo_Math_Scape/css/estilo.css')
 });
 
 app.get("/fase_css_D", function(req, res){
-    res.sendFile(__dirname + '/Math_Scape_telas/5-Jogo Math Scape/css/direita.css')
+    res.sendFile(__dirname + '/Math_Scape_telas/5-Jogo_Math_Scape/css/direita.css')
 });
 
 app.get("/fase_css_E", function(req, res){
-    res.sendFile(__dirname + '/Math_Scape_telas/5-Jogo Math Scape/css/esquerda.css')
+    res.sendFile(__dirname + '/Math_Scape_telas/5-Jogo_Math_Scape/css/esquerda.css')
 });
 
 app.get("/fase_css_F", function(req, res){
-    res.sendFile(__dirname + '/Math_Scape_telas/5-Jogo Math Scape/css/frente.css')
+    res.sendFile(__dirname + '/Math_Scape_telas/5-Jogo_Math_Scape/css/frente.css')
 });
 
 app.get("/fase_css_FU", function(req, res){
-    res.sendFile(__dirname + '/Math_Scape_telas/5-Jogo Math Scape/css/fundo.css')
+    res.sendFile(__dirname + '/Math_Scape_telas/5-Jogo_Math_Scape/css/fundo.css')
 });
 
 app.get("/fase_css_T", function(req, res){
-    res.sendFile(__dirname + '/Math_Scape_telas/5-Jogo Math Scape/css/teto.css')
+    res.sendFile(__dirname + '/Math_Scape_telas/5-Jogo_Math_Scape/css/teto.css')
 });
 
 //Rota imagem do icon fase pronta
 
 app.get('/ico_fase', function(req, res) {
-    const filePath = path.join(__dirname, 'Math_Scape_telas', '5-jogo Math Scape', 'imagens','favicons', 'favicon-32x32.png');
+    const filePath = path.join(__dirname, 'Math_Scape_telas', '5-jogo_Math_Scape', 'imagens','favicons', 'favicon-32x32.png');
     res.sendFile(filePath);
 });
 
 //Rota imag (Rota Direita)
 
 app.get('/D_Conf', function(req, res) {
-    const filePath = path.join(__dirname, 'Math_Scape_telas', '5-Jogo Math Scape','imagens','direita', 'configuracoes.png');
+    const filePath = path.join(__dirname, 'Math_Scape_telas', '5-Jogo_Math_Scape','imagens','direita', 'configuracoes.png');
     res.sendFile(filePath);
 });
 
 app.get('/D_Int', function(req, res) {
-    const filePath = path.join(__dirname, 'Math_Scape_telas', '5-Jogo Math Scape','imagens','direita', 'interrogação.png');
+    const filePath = path.join(__dirname, 'Math_Scape_telas', '5-Jogo_Math_Scape','imagens','direita', 'interrogação.png');
     res.sendFile(filePath);
 });
 
 app.get('/D_Jan', function(req, res) {
-    const filePath = path.join(__dirname, 'Math_Scape_telas', '5-Jogo Math Scape','imagens','direita', 'janela.png');
+    const filePath = path.join(__dirname, 'Math_Scape_telas', '5-Jogo_Math_Scape','imagens','direita', 'janela.png');
     res.sendFile(filePath);
 });
 
 app.get('/D_Quad', function(req, res) {
-    const filePath = path.join(__dirname, 'Math_Scape_telas', '5-Jogo Math Scape','imagens','direita', 'quadro.png');
+    const filePath = path.join(__dirname, 'Math_Scape_telas', '5-Jogo_Math_Scape','imagens','direita', 'quadro.png');
     res.sendFile(filePath);
 });
 
 app.get('/D_Roo', function(req, res) {
-    const filePath = path.join(__dirname, 'Math_Scape_telas', '5-Jogo Math Scape','imagens','direita', 'room_2.png');
+    const filePath = path.join(__dirname, 'Math_Scape_telas', '5-Jogo_Math_Scape','imagens','direita', 'room_2.png');
     res.sendFile(filePath);
 });
 
 //Rota Esquerda
 
 app.get('/E_Conf', function(req, res) {
-    const filePath = path.join(__dirname, 'Math_Scape_telas', '5-Jogo Math Scape','imagens','esquerda', 'configuracoes.png');
+    const filePath = path.join(__dirname, 'Math_Scape_telas', '5-Jogo_Math_Scape','imagens','esquerda', 'configuracoes.png');
     res.sendFile(filePath);
 });
 
 app.get('/E_Int', function(req, res) {
-    const filePath = path.join(__dirname, 'Math_Scape_telas', '5-Jogo Math Scape','imagens','esquerda', 'interrogação.png');
+    const filePath = path.join(__dirname, 'Math_Scape_telas', '5-Jogo_Math_Scape','imagens','esquerda', 'interrogação.png');
     res.sendFile(filePath);
 });
 
 app.get('/E_Rel_Ant', function(req, res) {
-    const filePath = path.join(__dirname, 'Math_Scape_telas', '5-Jogo Math Scape','imagens','esquerda', 'relogio.png');
+    const filePath = path.join(__dirname, 'Math_Scape_telas', '5-Jogo_Math_Scape','imagens','esquerda', 'relogio.png');
     res.sendFile(filePath);
 });
 
 app.get('/E_Roo', function(req, res) {
-    const filePath = path.join(__dirname, 'Math_Scape_telas', '5-Jogo Math Scape','imagens','esquerda', 'room_2.png');
+    const filePath = path.join(__dirname, 'Math_Scape_telas', '5-Jogo_Math_Scape','imagens','esquerda', 'room_2.png');
     res.sendFile(filePath);
 });
 
 app.get('/E_GizV', function(req, res) {
-    const filePath = path.join(__dirname, 'Math_Scape_telas', '5-Jogo Math Scape','imagens','esquerda', 'giz-vermelho.png');
+    const filePath = path.join(__dirname, 'Math_Scape_telas', '5-Jogo_Math_Scape','imagens','esquerda', 'giz-vermelho.png');
     res.sendFile(filePath);
 });
 
 //Rota frent
 
 app.get('/F_Bot_Fu', function(req, res) {
-    const filePath = path.join(__dirname, 'Math_Scape_telas', '5-Jogo Math Scape','imagens','frente', 'Botao_futuro.png');
+    const filePath = path.join(__dirname, 'Math_Scape_telas', '5-Jogo_Math_Scape','imagens','frente', 'Botao_futuro.png');
     res.sendFile(filePath);
 });
 
 app.get('/F_Conf', function(req, res) {
-    const filePath = path.join(__dirname, 'Math_Scape_telas', '5-Jogo Math Scape','imagens','frente', 'configuracoes.png');
+    const filePath = path.join(__dirname, 'Math_Scape_telas', '5-Jogo_Math_Scape','imagens','frente', 'configuracoes.png');
     res.sendFile(filePath);
 });
 
 app.get('/F_Door', function(req, res) {
-    const filePath = path.join(__dirname, 'Math_Scape_telas', '5-Jogo Math Scape','imagens','frente', 'door.png');
+    const filePath = path.join(__dirname, 'Math_Scape_telas', '5-Jogo_Math_Scape','imagens','frente', 'door.png');
     res.sendFile(filePath);
 });
 
 app.get('/F_Giz', function(req, res) {
-    const filePath = path.join(__dirname, 'Math_Scape_telas', '5-Jogo Math Scape','imagens','frente', 'giz de quadro.png');
+    const filePath = path.join(__dirname, 'Math_Scape_telas', '5-Jogo_Math_Scape','imagens','frente', 'giz de quadro.png');
     res.sendFile(filePath);
 });
 
 app.get('/F_Int', function(req, res) {
-    const filePath = path.join(__dirname, 'Math_Scape_telas', '5-Jogo Math Scape','imagens','frente', 'Interrogação.png');
+    const filePath = path.join(__dirname, 'Math_Scape_telas', '5-Jogo_Math_Scape','imagens','frente', 'Interrogação.png');
     res.sendFile(filePath);
 });
 
 app.get('/F_Quad', function(req, res) {
-    const filePath = path.join(__dirname, 'Math_Scape_telas', '5-Jogo Math Scape','imagens','frente', 'Quadro_negro.png');
+    const filePath = path.join(__dirname, 'Math_Scape_telas', '5-Jogo_Math_Scape','imagens','frente', 'Quadro_negro.png');
     res.sendFile(filePath);
 });
 
 app.get('/F_Rel', function(req, res) {
-    const filePath = path.join(__dirname, 'Math_Scape_telas', '5-Jogo Math Scape','imagens','frente', 'relogio.png');
+    const filePath = path.join(__dirname, 'Math_Scape_telas', '5-Jogo_Math_Scape','imagens','frente', 'relogio.png');
     res.sendFile(filePath);
 });
 
 app.get('/F_Roo', function(req, res) {
-    const filePath = path.join(__dirname, 'Math_Scape_telas', '5-Jogo Math Scape','imagens','frente', 'room.png');
+    const filePath = path.join(__dirname, 'Math_Scape_telas', '5-Jogo_Math_Scape','imagens','frente', 'room.png');
     res.sendFile(filePath);
 });
 
 //Rota fundo 
 
 app.get('/Fu_Conf', function(req, res) {
-    const filePath = path.join(__dirname, 'Math_Scape_telas', '5-Jogo Math Scape','imagens','fundo', 'configuracoes.png');
+    const filePath = path.join(__dirname, 'Math_Scape_telas', '5-Jogo_Math_Scape','imagens','fundo', 'configuracoes.png');
     res.sendFile(filePath);
 });
 
 app.get('/Fu_Int', function(req, res) {
-    const filePath = path.join(__dirname, 'Math_Scape_telas', '5-Jogo Math Scape','imagens','fundo', 'interrogação.png');
+    const filePath = path.join(__dirname, 'Math_Scape_telas', '5-Jogo_Math_Scape','imagens','fundo', 'interrogação.png');
     res.sendFile(filePath);
 });
 
 app.get('/FU_Jan', function(req, res) {
-    const filePath = path.join(__dirname, 'Math_Scape_telas', '5-Jogo Math Scape','imagens','fundo', 'janela.png');
+    const filePath = path.join(__dirname, 'Math_Scape_telas', '5-Jogo_Math_Scape','imagens','fundo', 'janela.png');
     res.sendFile(filePath);
 });
 
 
 app.get('/Fu_ArvSc', function(req, res) {
-    const filePath = path.join(__dirname, 'Math_Scape_telas', '5-Jogo Math Scape','imagens','fundo', 'arvore.png');
+    const filePath = path.join(__dirname, 'Math_Scape_telas', '5-Jogo_Math_Scape','imagens','fundo', 'arvore.png');
     res.sendFile(filePath);
 });
 
 app.get('/Fu_Roo', function(req, res) {
-    const filePath = path.join(__dirname, 'Math_Scape_telas', '5-Jogo Math Scape','imagens','fundo', 'room.png');
+    const filePath = path.join(__dirname, 'Math_Scape_telas', '5-Jogo_Math_Scape','imagens','fundo', 'room.png');
     res.sendFile(filePath);
 });
 
 app.get('/Fu_ArS', function(req, res) {
-    const filePath = path.join(__dirname, 'Math_Scape_telas', '5-Jogo Math Scape','imagens','fundo', 'arvore-seca.png');
+    const filePath = path.join(__dirname, 'Math_Scape_telas', '5-Jogo_Math_Scape','imagens','fundo', 'arvore-seca.png');
     res.sendFile(filePath);
 });
 
 app.get('/Fu_Pen', function(req, res) {
-    const filePath = path.join(__dirname, 'Math_Scape_telas', '5-Jogo Math Scape','imagens','fundo', 'pentagrama.png');
+    const filePath = path.join(__dirname, 'Math_Scape_telas', '5-Jogo_Math_Scape','imagens','fundo', 'pentagrama.png');
     res.sendFile(filePath);
 });
 
 //Rota teto
 
 app.get('/T_Conf', function(req, res) {
-    const filePath = path.join(__dirname, 'Math_Scape_telas', '5-Jogo Math Scape','imagens','teto', 'configuracoes.png');
+    const filePath = path.join(__dirname, 'Math_Scape_telas', '5-Jogo_Math_Scape','imagens','teto', 'configuracoes.png');
     res.sendFile(filePath);
 });
 
 app.get('/T_God', function(req, res) {
-    const filePath = path.join(__dirname, 'Math_Scape_telas', '5-Jogo Math Scape','imagens','teto', 'god-eye.jpg');
+    const filePath = path.join(__dirname, 'Math_Scape_telas', '5-Jogo_Math_Scape','imagens','teto', 'god-eye.jpg');
     res.sendFile(filePath);
 });
 app.get('/T_Int', function(req, res) {
-    const filePath = path.join(__dirname, 'Math_Scape_telas', '5-Jogo Math Scape','imagens','teto', 'interrogação.png');
+    const filePath = path.join(__dirname, 'Math_Scape_telas', '5-Jogo_Math_Scape','imagens','teto', 'interrogação.png');
     res.sendFile(filePath);
 });
 app.get('/T_Lam', function(req, res) {
-    const filePath = path.join(__dirname, 'Math_Scape_telas', '5-Jogo Math Scape','imagens','teto', 'lampada.png');
+    const filePath = path.join(__dirname, 'Math_Scape_telas', '5-Jogo_Math_Scape','imagens','teto', 'lampada.png');
     res.sendFile(filePath);
 });
 app.get('/T_Rel', function(req, res) {
-    const filePath = path.join(__dirname, 'Math_Scape_telas', '5-Jogo Math Scape','imagens','teto', 'relogio-teto.png');
+    const filePath = path.join(__dirname, 'Math_Scape_telas', '5-Jogo_Math_Scape','imagens','teto', 'relogio-teto.png');
     res.sendFile(filePath);
 });
 app.get('/T_Tet', function(req, res) {
-    const filePath = path.join(__dirname, 'Math_Scape_telas', '5-Jogo Math Scape','imagens','teto', 'teto.png');
+    const filePath = path.join(__dirname, 'Math_Scape_telas', '5-Jogo_Math_Scape','imagens','teto', 'teto.png');
     res.sendFile(filePath);
 });
 
 //JavaScrip
 
 app.get('/Fase_scrip', function(req, res) {
-    const filePath = path.join(__dirname, 'Math_Scape_telas', '5-Jogo Math Scape','JS','script.js');
+    const filePath = path.join(__dirname, 'Math_Scape_telas', '5-Jogo_Math_Scape','JS','script.js');
     res.sendFile(filePath);
 });
 
 app.get('/Fase_scrip_D', function(req, res) {
-    const filePath = path.join(__dirname, 'Math_Scape_telas', '5-Jogo Math Scape','js','direita.js');
+    const filePath = path.join(__dirname, 'Math_Scape_telas', '5-Jogo_Math_Scape','js','direita.js');
     res.sendFile(filePath);
 });
 
 app.get('/Fase_scrip_E', function(req, res) {
-    const filePath = path.join(__dirname, 'Math_Scape_telas', '5-Jogo Math Scape','js','esquerda.js');
+    const filePath = path.join(__dirname, 'Math_Scape_telas', '5-Jogo_Math_Scape','js','esquerda.js');
     res.sendFile(filePath);
 });
 
 app.get('/Fase_scrip_F', function(req, res) {
-    const filePath = path.join(__dirname, 'Math_Scape_telas', '5-Jogo Math Scape','js','frente.js');
+    const filePath = path.join(__dirname, 'Math_Scape_telas', '5-Jogo_Math_Scape','js','frente.js');
     res.sendFile(filePath);
 });
 
 app.get('/Fase_scrip_FU', function(req, res) {
-    const filePath = path.join(__dirname, 'Math_Scape_telas', '5-Jogo Math Scape','js','fundo.js');
+    const filePath = path.join(__dirname, 'Math_Scape_telas', '5-Jogo_Math_Scape','js','fundo.js');
     res.sendFile(filePath);
 });
 
 app.get('/Fase_scrip_T', function(req, res) {
-    const filePath = path.join(__dirname, 'Math_Scape_telas', '5-Jogo Math Scape','js','teto.js');
+    const filePath = path.join(__dirname, 'Math_Scape_telas', '5-Jogo_Math_Scape','js','teto.js');
     res.sendFile(filePath);
 });
 
